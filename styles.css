@@ -482,6 +482,7 @@
         display: flex;
         justify-content: center;
         padding: 20px;
+        flex-wrap: wrap;
     }
     
     .image-gallery {
@@ -490,14 +491,10 @@
         justify-content: center;
     }
     
-    .image-gallery a {
-        flex: 1 1 calc(30% - 1px); /* Adjusts for 3 images per row with margins */
-        margin: 5px;
-    }
-    
     .image-gallery img {
-        width: 100%; /* Makes the image responsive */
-        height: auto; /* Maintains aspect ratio */
+        margin: 5px;
+        max-width: calc(30% - 10px); /* 3 images per row with margins */
+        height: auto; /* maintain aspect ratio */
     }
     
 
